@@ -35,13 +35,13 @@ public class Cat implements Pet {
             @Override
             public String say() {
                 String res="";
-                if(i<1) System.out.println("Васька спит.");
+                if(i<1) res = name + " спит.";
                 else {
                     StringBuilder sB=new StringBuilder();
                     for(int j=1; j<=i;j++){
                         sB=sB.append("я");
                     }
-                    res = name +" говорит м"+sB.toString()+"y!";
+                    res = name +" говорит м"+sB.toString()+"у!";
                 }
                 return res;
             }

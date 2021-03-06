@@ -58,9 +58,9 @@ public class Dog implements Pet {
                 else {
                     StringBuilder sB = new StringBuilder();
                     for(int j=1; j<=i; j++){
-                        sB=sB.append("a");
+                        sB=sB.append("а");
                     }
-                    res = getName() + "лает г" + sB.toString() +"в! " + formatter.format(new Date());
+                    res = getName() + " лает г" + sB.toString() +"в! " + formatter.format(new Date());
                 }
                 return res;
             }
